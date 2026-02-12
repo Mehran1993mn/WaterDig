@@ -14,6 +14,25 @@ To use this repository:
 
 New assignments and solution keys will be added weekly, so we'll be working through upstream pulls and merges in class.
 
+To install required packages to run notebooks in this repository, first use terminal to create a new conda environment named "waterdig:"
+
+    conda create --prefix ~/conda-envs/waterdig 
+    
+Activate this environment (note, if you are running this on a personal computer instead of a server, you will use `conda activate` instead of `source activate`):
+
+    source activate ~/conda-envs/waterdig  
+
+Install all packages listed in the requirements.txt file:
+
+    pip install -r requirements.txt 
+    
+Enable the "waterdig" environment to be discoverable as a kernel in Jupyter Notebooks:
+
+    python -m ipykernel install --user --name=waterdig --display-name "waterdig" 
+
+When you open notebook in this repository, select "waterdig" as a kernel using the upper righthand menu.
+
 
 Did these resources help your research? Spread the word! Preferred citation: 
-Carter, E., Hultquist, C., & Wen, T. (2023). GRRIEn analysis: a data science cheat sheet for earth scientists learning from global earth observations. Artificial Intelligence for the Earth Systems, 2(2), 220065.[https://journals.ametsoc.org/downloadpdf/view/journals/aies/2/2/AIES-D-22-0065.1.pdf] 
+
+[Carter, E., Hultquist, C., & Wen, T. (2023). GRRIEn analysis: a data science cheat sheet for earth scientists learning from global earth observations. Artificial Intelligence for the Earth Systems, 2(2), 220065.](https://journals.ametsoc.org/downloadpdf/view/journals/aies/2/2/AIES-D-22-0065.1.pdf) 
